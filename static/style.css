@@ -1,0 +1,133 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #034C53;  /* Dark teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 80vw;
+    height: 90vh;
+    background:url('/static/book_bg_3.webp');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007074;  /* Deep blue-green */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #007074;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #F38C79;
+    box-shadow: 0 0 8px rgba(243, 140, 121, 0.5);
+}
+
+/* Button */
+button {
+    padding: 12px 18px;
+    background: #F38C79;  /* Coral shade */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FFC1B4;  /* Soft peach */
+    color: #034C53;
+}
+
+/* Book Result Section */
+#book-result {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Book Image */
+.book-image {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Details Box */
+.book-details {
+    text-align: left;
+    width: 80%;
+    background: rgba(0, 112, 116, 0.95);  /* Darker for better text readability */
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 95vw;
+        height: 95vh;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .book-details {
+        width: 90%;
+    }
+}
+.copy-btn {
+    background-color: #007074;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #F38C79;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
